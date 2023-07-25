@@ -1,0 +1,51 @@
+<div id="Template">
+<div id="Tela">
+<div id="Componentes">
+<div id="Login">
+
+  <form class="example-form">
+    <div class="Box">
+    <p>Nome:</p>
+    <mat-form-field class="example-form-field" id="Nome">
+      <input matInput placeholder="Digite seu Nome" />
+      <button *ngIf="value"matSuffix mat-icon-butto aria-label="Clear" (click)="value = ''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+  <div class="Box">
+    <p>Telefone:</p>
+    <mat-form-field class="example-full-width" id="Telefone">
+      <input type="tel" matInput placeholder="(XX) XXXX-XXXX" />
+    </mat-form-field>
+  </div>
+  <div class="Box">
+    <p>E-mail:</p>
+    <mat-form-field class="example-full-width" id="E-mail">
+      <input matInput placeholder="Digite seu e-mail" />
+    </mat-form-field>
+  </div>
+  </form>
+
+</div>
+
+<div id="Assunto">
+  <p class="Descricao">Assunto:</p>
+  <form class="example-form">
+    <mat-form-field class="example-full-width" id="Resumo">
+      <textarea
+        matInput
+        placeholder="Ex: Desejo solicitar um novo cartão"
+      ></textarea>
+    </mat-form-field>
+  </form>
+
+</div>
+  <div id="OK">
+    <button mat-raised-button id="BTN">OK</button>
+  </div>
+
+</div>
+
+</div>
+</div>
